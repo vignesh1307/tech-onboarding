@@ -1,0 +1,23 @@
+{
+  "name": "nightwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm update browserstack-node-sdk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "browserstack": "^1.6.1",
+    "browserstack-node-sdk": "^1.38.0",
+    "nightwatch": "^3.12.2"
+  },
+  "dependencies": {
+    "@nightwatch/browserstack": "^3.4.5"
+  }
+}

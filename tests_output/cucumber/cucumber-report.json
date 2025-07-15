@@ -1,0 +1,1193 @@
+{
+  "metadata": {
+    "protocolVersion": "27.2.0",
+    "implementation": {
+      "version": "11.3.0",
+      "name": "cucumber-js"
+    },
+    "cpu": {
+      "name": "arm64"
+    },
+    "os": {
+      "name": "darwin",
+      "version": "24.5.0"
+    },
+    "runtime": {
+      "name": "node.js",
+      "version": "24.3.0"
+    }
+  },
+  "source": {
+    "data": "Feature: Google Search\nBackground: Background name\n  Given I open the Rijksmuseum page\n  And I dismiss the cookie dialog\n  Then the website title should contain \"Dutch master\"\n\n@a @b\nScenario: Searching the Rijksmuseum\n  Given I search \"night watch\"\n  Then Body contains \"Operation Night Watch\"\n\n@automationexercise\nScenario: Launch Automation Exercise Login Page\n  Given I launch the website \"https://www.automationexercise.com/login\"\n  Then the website title should contain \"Signup / Login\"\n\n@automationexercise\nScenario: Signup as a new user on Automation Exercise\n  Given I launch the website \"https://www.automationexercise.com/login\"\n  When I enter name \"Test User\" and email \"testuser@example.com\" in the signup form\n  And I click the Signup button\n  Then the signup should be processed\n",
+    "uri": "test/features/nightwatch/nightwatch.feature",
+    "mediaType": "text/x.cucumber.gherkin+plain"
+  },
+  "gherkinDocument": [
+    {
+      "feature": {
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Google Search",
+        "description": "",
+        "children": [
+          {
+            "background": {
+              "id": "c02b5ab2-0d4c-49f0-82b6-85cff5848e7a",
+              "location": {
+                "line": 2,
+                "column": 1
+              },
+              "keyword": "Background",
+              "name": "Background name",
+              "description": "",
+              "steps": [
+                {
+                  "id": "71b98e7f-c8f2-485c-b74d-4a5a60f3b695",
+                  "location": {
+                    "line": 3,
+                    "column": 3
+                  },
+                  "keyword": "Given ",
+                  "keywordType": "Context",
+                  "text": "I open the Rijksmuseum page"
+                },
+                {
+                  "id": "6b4666a6-98a0-4e04-97b3-752d4bf1fbf4",
+                  "location": {
+                    "line": 4,
+                    "column": 3
+                  },
+                  "keyword": "And ",
+                  "keywordType": "Conjunction",
+                  "text": "I dismiss the cookie dialog"
+                },
+                {
+                  "id": "2ae8469b-be1a-4478-a903-275822645b51",
+                  "location": {
+                    "line": 5,
+                    "column": 3
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "the website title should contain \"Dutch master\""
+                }
+              ]
+            }
+          },
+          {
+            "scenario": {
+              "id": "837d2019-31ff-46b2-968f-37d5db8f5c38",
+              "tags": [
+                {
+                  "location": {
+                    "line": 7,
+                    "column": 1
+                  },
+                  "name": "@a",
+                  "id": "71b30dca-31b7-418f-b7b2-512449c4e968"
+                },
+                {
+                  "location": {
+                    "line": 7,
+                    "column": 4
+                  },
+                  "name": "@b",
+                  "id": "c6c1c11f-c36e-48f3-976e-5fe9fe785ca9"
+                }
+              ],
+              "location": {
+                "line": 8,
+                "column": 1
+              },
+              "keyword": "Scenario",
+              "name": "Searching the Rijksmuseum",
+              "description": "",
+              "steps": [
+                {
+                  "id": "60fef8cd-e058-4890-a565-efd62e46c7a4",
+                  "location": {
+                    "line": 9,
+                    "column": 3
+                  },
+                  "keyword": "Given ",
+                  "keywordType": "Context",
+                  "text": "I search \"night watch\""
+                },
+                {
+                  "id": "07b9f27c-29d2-40dc-8c02-724ba63c53d6",
+                  "location": {
+                    "line": 10,
+                    "column": 3
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "Body contains \"Operation Night Watch\""
+                }
+              ],
+              "examples": []
+            }
+          },
+          {
+            "scenario": {
+              "id": "2606ca53-d942-442b-8c17-5e6c54a32b03",
+              "tags": [
+                {
+                  "location": {
+                    "line": 12,
+                    "column": 1
+                  },
+                  "name": "@automationexercise",
+                  "id": "a1ddb0e8-7786-4671-8e21-eb1404a301d0"
+                }
+              ],
+              "location": {
+                "line": 13,
+                "column": 1
+              },
+              "keyword": "Scenario",
+              "name": "Launch Automation Exercise Login Page",
+              "description": "",
+              "steps": [
+                {
+                  "id": "843b4dba-bae7-4da1-9299-b0d0ca1ba794",
+                  "location": {
+                    "line": 14,
+                    "column": 3
+                  },
+                  "keyword": "Given ",
+                  "keywordType": "Context",
+                  "text": "I launch the website \"https://www.automationexercise.com/login\""
+                },
+                {
+                  "id": "299c8a23-96a5-481f-a604-b57e22c6ccb8",
+                  "location": {
+                    "line": 15,
+                    "column": 3
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "the website title should contain \"Signup / Login\""
+                }
+              ],
+              "examples": []
+            }
+          },
+          {
+            "scenario": {
+              "id": "24f2fbe2-0087-4850-bbe5-805edc5f35a5",
+              "tags": [
+                {
+                  "location": {
+                    "line": 17,
+                    "column": 1
+                  },
+                  "name": "@automationexercise",
+                  "id": "fcb21668-3ee3-4c49-8cdc-33b1eaf74864"
+                }
+              ],
+              "location": {
+                "line": 18,
+                "column": 1
+              },
+              "keyword": "Scenario",
+              "name": "Signup as a new user on Automation Exercise",
+              "description": "",
+              "steps": [
+                {
+                  "id": "76cbda3f-42a7-472e-9687-d263a6c068a7",
+                  "location": {
+                    "line": 19,
+                    "column": 3
+                  },
+                  "keyword": "Given ",
+                  "keywordType": "Context",
+                  "text": "I launch the website \"https://www.automationexercise.com/login\""
+                },
+                {
+                  "id": "6476a4c5-4f6b-497b-8d63-68dc47712745",
+                  "location": {
+                    "line": 20,
+                    "column": 3
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I enter name \"Test User\" and email \"testuser@example.com\" in the signup form"
+                },
+                {
+                  "id": "1f92ee89-f74b-4c3a-a144-68c37e509ebd",
+                  "location": {
+                    "line": 21,
+                    "column": 3
+                  },
+                  "keyword": "And ",
+                  "keywordType": "Conjunction",
+                  "text": "I click the Signup button"
+                },
+                {
+                  "id": "05150eb2-903a-437f-8a85-593f7c34087c",
+                  "location": {
+                    "line": 22,
+                    "column": 3
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "the signup should be processed"
+                }
+              ],
+              "examples": []
+            }
+          }
+        ]
+      },
+      "comments": [],
+      "uri": "test/features/nightwatch/nightwatch.feature"
+    }
+  ],
+  "pickle": [
+    {
+      "id": "c291a32c-b152-4416-9105-8870a7bfd473",
+      "uri": "test/features/nightwatch/nightwatch.feature",
+      "astNodeIds": [
+        "837d2019-31ff-46b2-968f-37d5db8f5c38"
+      ],
+      "tags": [
+        {
+          "name": "@a",
+          "astNodeId": "71b30dca-31b7-418f-b7b2-512449c4e968"
+        },
+        {
+          "name": "@b",
+          "astNodeId": "c6c1c11f-c36e-48f3-976e-5fe9fe785ca9"
+        }
+      ],
+      "name": "Searching the Rijksmuseum",
+      "language": "en",
+      "steps": [
+        {
+          "id": "4bb1e027-3ae4-4593-a057-c43de8240afe",
+          "text": "I open the Rijksmuseum page",
+          "type": "Context",
+          "astNodeIds": [
+            "71b98e7f-c8f2-485c-b74d-4a5a60f3b695"
+          ]
+        },
+        {
+          "id": "3bb659c3-92c2-40dc-b48a-040739feb230",
+          "text": "I dismiss the cookie dialog",
+          "type": "Context",
+          "astNodeIds": [
+            "6b4666a6-98a0-4e04-97b3-752d4bf1fbf4"
+          ]
+        },
+        {
+          "id": "69e42a20-e64f-4472-a484-3b98bc8ab3d5",
+          "text": "the website title should contain \"Dutch master\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "2ae8469b-be1a-4478-a903-275822645b51"
+          ]
+        },
+        {
+          "id": "58f8038d-0cdc-403c-b07e-fce89d075a86",
+          "text": "I search \"night watch\"",
+          "type": "Context",
+          "astNodeIds": [
+            "60fef8cd-e058-4890-a565-efd62e46c7a4"
+          ]
+        },
+        {
+          "id": "b823e383-840a-4bcf-acb5-b23ccf5482ec",
+          "text": "Body contains \"Operation Night Watch\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "07b9f27c-29d2-40dc-8c02-724ba63c53d6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b9604550-50e6-4da6-af1e-5d8aa935db20",
+      "uri": "test/features/nightwatch/nightwatch.feature",
+      "astNodeIds": [
+        "2606ca53-d942-442b-8c17-5e6c54a32b03"
+      ],
+      "tags": [
+        {
+          "name": "@automationexercise",
+          "astNodeId": "a1ddb0e8-7786-4671-8e21-eb1404a301d0"
+        }
+      ],
+      "name": "Launch Automation Exercise Login Page",
+      "language": "en",
+      "steps": [
+        {
+          "id": "b1dcfac3-c691-4c13-90ff-6a1b73f854d2",
+          "text": "I open the Rijksmuseum page",
+          "type": "Context",
+          "astNodeIds": [
+            "71b98e7f-c8f2-485c-b74d-4a5a60f3b695"
+          ]
+        },
+        {
+          "id": "1ecb3fe5-7853-4883-afe4-19fa3749fbea",
+          "text": "I dismiss the cookie dialog",
+          "type": "Context",
+          "astNodeIds": [
+            "6b4666a6-98a0-4e04-97b3-752d4bf1fbf4"
+          ]
+        },
+        {
+          "id": "307aff5a-cdd1-41cc-b95f-499f273bff3c",
+          "text": "the website title should contain \"Dutch master\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "2ae8469b-be1a-4478-a903-275822645b51"
+          ]
+        },
+        {
+          "id": "b643e02c-b3f1-4045-a01c-8eab1faec4d4",
+          "text": "I launch the website \"https://www.automationexercise.com/login\"",
+          "type": "Context",
+          "astNodeIds": [
+            "843b4dba-bae7-4da1-9299-b0d0ca1ba794"
+          ]
+        },
+        {
+          "id": "aa4b5995-7e2d-42e5-bfc5-48c83c570080",
+          "text": "the website title should contain \"Signup / Login\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "299c8a23-96a5-481f-a604-b57e22c6ccb8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d97cc9ce-7a30-403e-89bb-4b822fc348c2",
+      "uri": "test/features/nightwatch/nightwatch.feature",
+      "astNodeIds": [
+        "24f2fbe2-0087-4850-bbe5-805edc5f35a5"
+      ],
+      "tags": [
+        {
+          "name": "@automationexercise",
+          "astNodeId": "fcb21668-3ee3-4c49-8cdc-33b1eaf74864"
+        }
+      ],
+      "name": "Signup as a new user on Automation Exercise",
+      "language": "en",
+      "steps": [
+        {
+          "id": "bdf71ee8-af23-44ce-bf3d-1d87c6850847",
+          "text": "I open the Rijksmuseum page",
+          "type": "Context",
+          "astNodeIds": [
+            "71b98e7f-c8f2-485c-b74d-4a5a60f3b695"
+          ]
+        },
+        {
+          "id": "6ea83dfb-71a3-40f1-94ea-0a4640004054",
+          "text": "I dismiss the cookie dialog",
+          "type": "Context",
+          "astNodeIds": [
+            "6b4666a6-98a0-4e04-97b3-752d4bf1fbf4"
+          ]
+        },
+        {
+          "id": "e24d5409-facb-47e8-80e7-95914aa6b4c3",
+          "text": "the website title should contain \"Dutch master\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "2ae8469b-be1a-4478-a903-275822645b51"
+          ]
+        },
+        {
+          "id": "b2c37667-f668-4bf3-8579-585581019138",
+          "text": "I launch the website \"https://www.automationexercise.com/login\"",
+          "type": "Context",
+          "astNodeIds": [
+            "76cbda3f-42a7-472e-9687-d263a6c068a7"
+          ]
+        },
+        {
+          "id": "323b7ccb-9258-4688-9247-0ed1b3d0d69a",
+          "text": "I enter name \"Test User\" and email \"testuser@example.com\" in the signup form",
+          "type": "Action",
+          "astNodeIds": [
+            "6476a4c5-4f6b-497b-8d63-68dc47712745"
+          ]
+        },
+        {
+          "id": "d8d7ecee-a02f-4138-8468-340a75d95228",
+          "text": "I click the Signup button",
+          "type": "Action",
+          "astNodeIds": [
+            "1f92ee89-f74b-4c3a-a144-68c37e509ebd"
+          ]
+        },
+        {
+          "id": "79cf1f81-2307-4d70-9753-76f1f19eed3c",
+          "text": "the signup should be processed",
+          "type": "Outcome",
+          "astNodeIds": [
+            "05150eb2-903a-437f-8a85-593f7c34087c"
+          ]
+        }
+      ]
+    }
+  ],
+  "stepDefinition": [
+    {
+      "id": "ff573a89-3c92-4d53-8661-97cc773e197e",
+      "pattern": {
+        "source": "/^I open the Rijksmuseum page$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 4
+        }
+      }
+    },
+    {
+      "id": "0961cfaa-2def-448e-8d31-ab9a434c39c1",
+      "pattern": {
+        "source": "/^I dismiss the cookie dialog$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 8
+        }
+      }
+    },
+    {
+      "id": "50a02a79-a3f3-4aa0-b5b9-f3a9d901fbcb",
+      "pattern": {
+        "source": "/^I search \"([^\"]*)\"$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 19
+        }
+      }
+    },
+    {
+      "id": "188d403d-9af8-4a1b-837e-60c67ff9d01e",
+      "pattern": {
+        "source": "/^I launch the website \"([^\"]*)\"$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 28
+        }
+      }
+    },
+    {
+      "id": "f9ac4787-d2df-415a-b06e-f9b8ca6bb4bf",
+      "pattern": {
+        "source": "/^I enter name \"([^\"]*)\" and email \"([^\"]*)\" in the signup form$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 32
+        }
+      }
+    },
+    {
+      "id": "9ecd204c-23d3-449b-8ce3-be0a82ef0f83",
+      "pattern": {
+        "source": "/^I click the Signup button$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 37
+        }
+      }
+    },
+    {
+      "id": "2a450cdb-ee16-4f57-a725-ac216ae35e81",
+      "pattern": {
+        "source": "/^the signup should be processed$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 41
+        }
+      }
+    },
+    {
+      "id": "fc8f6661-54b6-4768-9e05-40d2adf129bb",
+      "pattern": {
+        "source": "/^the title is \"([^\"]*)\"$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 46
+        }
+      }
+    },
+    {
+      "id": "10bd6423-820f-4b9e-92af-3078e3c0b061",
+      "pattern": {
+        "source": "/^Body contains \"([^\"]*)\"$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 50
+        }
+      }
+    },
+    {
+      "id": "adf53a02-c7f2-403b-9041-bf3f50f82dd2",
+      "pattern": {
+        "source": "/^the website title should contain \"([^\"]*)\"$/",
+        "type": "REGULAR_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "test/features/nightwatch/step_definitions/nightwatch.js",
+        "location": {
+          "line": 54
+        }
+      }
+    }
+  ],
+  "hooks": [
+    {
+      "id": "d8b44e56-7329-44ef-aa8d-0675d4f31ca4",
+      "type": "BEFORE_TEST_CASE",
+      "sourceReference": {
+        "uri": "node_modules/nightwatch/lib/runner/test-runners/cucumber/_setup_cucumber_runner.js",
+        "location": {
+          "line": 6
+        }
+      }
+    },
+    {
+      "id": "1db34dba-ce39-4b68-b590-8bc38e32686d",
+      "type": "BEFORE_TEST_CASE",
+      "sourceReference": {
+        "uri": "node_modules/@nightwatch/browserstack/nightwatch/observabilityLogPatcherHook.js",
+        "location": {
+          "line": 4
+        }
+      }
+    },
+    {
+      "id": "1ac63211-d617-4166-86e4-b9984614459c",
+      "type": "AFTER_TEST_CASE",
+      "sourceReference": {
+        "uri": "node_modules/nightwatch/lib/runner/test-runners/cucumber/_setup_cucumber_runner.js",
+        "location": {
+          "line": 69
+        }
+      }
+    }
+  ],
+  "testRunStarted": {
+    "id": "d4a7b041-e0ff-4b36-b061-28a1fe4b6739",
+    "timestamp": {
+      "seconds": 1752560372,
+      "nanos": 810000000
+    }
+  },
+  "testCases": [
+    {
+      "testRunStartedId": "d4a7b041-e0ff-4b36-b061-28a1fe4b6739",
+      "pickleId": "c291a32c-b152-4416-9105-8870a7bfd473",
+      "id": "b236a382-440a-4a7b-a146-ae3528b5f7d5",
+      "testSteps": [
+        {
+          "id": "f6618c59-19bd-4262-b64e-a7d8b9958c46",
+          "hookId": "d8b44e56-7329-44ef-aa8d-0675d4f31ca4"
+        },
+        {
+          "id": "f07ddd79-6d43-4fd2-ae14-02d8e09b9ecf",
+          "hookId": "1db34dba-ce39-4b68-b590-8bc38e32686d"
+        },
+        {
+          "id": "1030ba52-80bb-46ab-a21c-8c799ec5d392",
+          "pickleStepId": "4bb1e027-3ae4-4593-a057-c43de8240afe",
+          "stepDefinitionIds": [
+            "ff573a89-3c92-4d53-8661-97cc773e197e"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "0c0d5201-77f7-434c-846b-222832a6b251",
+          "pickleStepId": "3bb659c3-92c2-40dc-b48a-040739feb230",
+          "stepDefinitionIds": [
+            "0961cfaa-2def-448e-8d31-ab9a434c39c1"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "a74b6942-2def-42da-b149-a9ec3c891474",
+          "pickleStepId": "69e42a20-e64f-4472-a484-3b98bc8ab3d5",
+          "stepDefinitionIds": [
+            "adf53a02-c7f2-403b-9041-bf3f50f82dd2"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 34,
+                    "value": "Dutch master",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "11ce3b2c-376e-4844-b793-a7a43f4d938d",
+          "pickleStepId": "58f8038d-0cdc-403c-b07e-fce89d075a86",
+          "stepDefinitionIds": [
+            "50a02a79-a3f3-4aa0-b5b9-f3a9d901fbcb"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 10,
+                    "value": "night watch",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a28486f9-beb0-43e5-b951-a1e7e3eaeae7",
+          "pickleStepId": "b823e383-840a-4bcf-acb5-b23ccf5482ec",
+          "stepDefinitionIds": [
+            "10bd6423-820f-4b9e-92af-3078e3c0b061"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 15,
+                    "value": "Operation Night Watch",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2acb28d7-3a18-4b55-8daf-4efa2dd58811",
+          "hookId": "1ac63211-d617-4166-86e4-b9984614459c"
+        }
+      ]
+    },
+    {
+      "testRunStartedId": "d4a7b041-e0ff-4b36-b061-28a1fe4b6739",
+      "pickleId": "b9604550-50e6-4da6-af1e-5d8aa935db20",
+      "id": "01d86802-785a-4513-bb56-8fb19b2bc023",
+      "testSteps": [
+        {
+          "id": "70d9d1e8-8531-4528-9d2c-08f4923ab359",
+          "hookId": "d8b44e56-7329-44ef-aa8d-0675d4f31ca4"
+        },
+        {
+          "id": "a57b48a8-e4af-41e0-bd34-9235a9d9cf5c",
+          "hookId": "1db34dba-ce39-4b68-b590-8bc38e32686d"
+        },
+        {
+          "id": "023d509b-cef4-44d2-9fc2-93d827f22356",
+          "pickleStepId": "b1dcfac3-c691-4c13-90ff-6a1b73f854d2",
+          "stepDefinitionIds": [
+            "ff573a89-3c92-4d53-8661-97cc773e197e"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "24e46713-d677-4f88-9336-598d92e479df",
+          "pickleStepId": "1ecb3fe5-7853-4883-afe4-19fa3749fbea",
+          "stepDefinitionIds": [
+            "0961cfaa-2def-448e-8d31-ab9a434c39c1"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "797ef998-5d40-41d8-b59d-f2441fb7dfe0",
+          "pickleStepId": "307aff5a-cdd1-41cc-b95f-499f273bff3c",
+          "stepDefinitionIds": [
+            "adf53a02-c7f2-403b-9041-bf3f50f82dd2"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 34,
+                    "value": "Dutch master",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "623d272d-f054-400d-a8e9-cff48774c255",
+          "pickleStepId": "b643e02c-b3f1-4045-a01c-8eab1faec4d4",
+          "stepDefinitionIds": [
+            "188d403d-9af8-4a1b-837e-60c67ff9d01e"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 22,
+                    "value": "https://www.automationexercise.com/login",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3a6d449-6ae2-4926-b28a-d6bfa34def1c",
+          "pickleStepId": "aa4b5995-7e2d-42e5-bfc5-48c83c570080",
+          "stepDefinitionIds": [
+            "adf53a02-c7f2-403b-9041-bf3f50f82dd2"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 34,
+                    "value": "Signup / Login",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f9baf486-4b7d-490e-9d30-3631486c5ec7",
+          "hookId": "1ac63211-d617-4166-86e4-b9984614459c"
+        }
+      ]
+    },
+    {
+      "testRunStartedId": "d4a7b041-e0ff-4b36-b061-28a1fe4b6739",
+      "pickleId": "d97cc9ce-7a30-403e-89bb-4b822fc348c2",
+      "id": "97cb8427-d5bc-4559-a99f-09c35b739ab5",
+      "testSteps": [
+        {
+          "id": "08eb0109-0b85-4011-9194-539a8342eaf0",
+          "hookId": "d8b44e56-7329-44ef-aa8d-0675d4f31ca4"
+        },
+        {
+          "id": "ed22cda0-3137-468b-bbff-ee48c3328fe8",
+          "hookId": "1db34dba-ce39-4b68-b590-8bc38e32686d"
+        },
+        {
+          "id": "aa1f7cf3-f40b-4642-98e1-c33c1dd59502",
+          "pickleStepId": "bdf71ee8-af23-44ce-bf3d-1d87c6850847",
+          "stepDefinitionIds": [
+            "ff573a89-3c92-4d53-8661-97cc773e197e"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "034195e1-bbaf-4854-b504-41b71cbe9586",
+          "pickleStepId": "6ea83dfb-71a3-40f1-94ea-0a4640004054",
+          "stepDefinitionIds": [
+            "0961cfaa-2def-448e-8d31-ab9a434c39c1"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "744038f8-3973-487d-9848-7a80546a5158",
+          "pickleStepId": "e24d5409-facb-47e8-80e7-95914aa6b4c3",
+          "stepDefinitionIds": [
+            "adf53a02-c7f2-403b-9041-bf3f50f82dd2"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 34,
+                    "value": "Dutch master",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "68b0dec0-79b5-476b-b4e1-bdd67eb34cb7",
+          "pickleStepId": "b2c37667-f668-4bf3-8579-585581019138",
+          "stepDefinitionIds": [
+            "188d403d-9af8-4a1b-837e-60c67ff9d01e"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 22,
+                    "value": "https://www.automationexercise.com/login",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2ec8fa3-4ba4-4a54-958e-f09f493d4d9e",
+          "pickleStepId": "323b7ccb-9258-4688-9247-0ed1b3d0d69a",
+          "stepDefinitionIds": [
+            "f9ac4787-d2df-415a-b06e-f9b8ca6bb4bf"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 14,
+                    "value": "Test User",
+                    "children": []
+                  }
+                },
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "testuser@example.com",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a393fe3d-1f2f-4dc8-925c-eef5601a70c0",
+          "pickleStepId": "d8d7ecee-a02f-4138-8468-340a75d95228",
+          "stepDefinitionIds": [
+            "9ecd204c-23d3-449b-8ce3-be0a82ef0f83"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "598575a6-74ab-4814-8047-80c07ec6a345",
+          "pickleStepId": "79cf1f81-2307-4d70-9753-76f1f19eed3c",
+          "stepDefinitionIds": [
+            "2a450cdb-ee16-4f57-a725-ac216ae35e81"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "7b6e9b71-8ad6-463c-b107-060bbc11e09c",
+          "hookId": "1ac63211-d617-4166-86e4-b9984614459c"
+        }
+      ]
+    }
+  ],
+  "testCaseStarted": {
+    "61287385-9a47-4bce-aceb-8f3933d1f862": {
+      "attempt": 0,
+      "testCaseId": "b236a382-440a-4a7b-a146-ae3528b5f7d5",
+      "id": "61287385-9a47-4bce-aceb-8f3933d1f862",
+      "timestamp": {
+        "seconds": 1752560372,
+        "nanos": 816000000
+      }
+    },
+    "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5": {
+      "attempt": 0,
+      "testCaseId": "01d86802-785a-4513-bb56-8fb19b2bc023",
+      "id": "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5",
+      "timestamp": {
+        "seconds": 1752560374,
+        "nanos": 315000000
+      }
+    },
+    "2b6a4a27-94d0-4b19-83a8-0c0727111c52": {
+      "attempt": 0,
+      "testCaseId": "97cb8427-d5bc-4559-a99f-09c35b739ab5",
+      "id": "2b6a4a27-94d0-4b19-83a8-0c0727111c52",
+      "timestamp": {
+        "seconds": 1752560375,
+        "nanos": 271000000
+      }
+    }
+  },
+  "testStepStarted": {
+    "61287385-9a47-4bce-aceb-8f3933d1f862": {
+      "testCaseStartedId": "61287385-9a47-4bce-aceb-8f3933d1f862",
+      "testStepId": "2acb28d7-3a18-4b55-8daf-4efa2dd58811",
+      "timestamp": {
+        "seconds": 1752560374,
+        "nanos": 313000000
+      }
+    },
+    "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5": {
+      "testCaseStartedId": "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5",
+      "testStepId": "f9baf486-4b7d-490e-9d30-3631486c5ec7",
+      "timestamp": {
+        "seconds": 1752560375,
+        "nanos": 270000000
+      }
+    },
+    "2b6a4a27-94d0-4b19-83a8-0c0727111c52": {
+      "testCaseStartedId": "2b6a4a27-94d0-4b19-83a8-0c0727111c52",
+      "testStepId": "7b6e9b71-8ad6-463c-b107-060bbc11e09c",
+      "timestamp": {
+        "seconds": 1752560376,
+        "nanos": 309000000
+      }
+    }
+  },
+  "session": {
+    "61287385-9a47-4bce-aceb-8f3933d1f862": {
+      "error": {
+        "name": "WebDriverError",
+        "remoteStacktrace": "",
+        "showTrace": false,
+        "reportShown": true
+      },
+      "testCaseStartedId": "61287385-9a47-4bce-aceb-8f3933d1f862"
+    },
+    "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5": {
+      "error": {
+        "name": "WebDriverError",
+        "remoteStacktrace": "",
+        "showTrace": false,
+        "reportShown": true
+      },
+      "testCaseStartedId": "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5"
+    },
+    "2b6a4a27-94d0-4b19-83a8-0c0727111c52": {
+      "error": {
+        "name": "WebDriverError",
+        "remoteStacktrace": "",
+        "showTrace": false,
+        "reportShown": true
+      },
+      "testCaseStartedId": "2b6a4a27-94d0-4b19-83a8-0c0727111c52"
+    }
+  },
+  "testStepFinished": {
+    "61287385-9a47-4bce-aceb-8f3933d1f862": {
+      "testCaseStartedId": "61287385-9a47-4bce-aceb-8f3933d1f862",
+      "testStepId": "2acb28d7-3a18-4b55-8daf-4efa2dd58811",
+      "testStepResult": {
+        "duration": {
+          "seconds": 0,
+          "nanos": 273250
+        },
+        "status": "PASSED"
+      },
+      "timestamp": {
+        "seconds": 1752560374,
+        "nanos": 314000000
+      },
+      "httpOutput": []
+    },
+    "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5": {
+      "testCaseStartedId": "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5",
+      "testStepId": "f9baf486-4b7d-490e-9d30-3631486c5ec7",
+      "testStepResult": {
+        "duration": {
+          "seconds": 0,
+          "nanos": 180667
+        },
+        "status": "PASSED"
+      },
+      "timestamp": {
+        "seconds": 1752560375,
+        "nanos": 271000000
+      },
+      "httpOutput": []
+    },
+    "2b6a4a27-94d0-4b19-83a8-0c0727111c52": {
+      "testCaseStartedId": "2b6a4a27-94d0-4b19-83a8-0c0727111c52",
+      "testStepId": "7b6e9b71-8ad6-463c-b107-060bbc11e09c",
+      "testStepResult": {
+        "duration": {
+          "seconds": 0,
+          "nanos": 161790
+        },
+        "status": "PASSED"
+      },
+      "timestamp": {
+        "seconds": 1752560376,
+        "nanos": 309000000
+      },
+      "httpOutput": []
+    }
+  },
+  "testCaseFinished": {
+    "61287385-9a47-4bce-aceb-8f3933d1f862": {
+      "testCaseStartedId": "61287385-9a47-4bce-aceb-8f3933d1f862",
+      "timestamp": {
+        "seconds": 1752560374,
+        "nanos": 314000000
+      },
+      "willBeRetried": false,
+      "httpOutput": [
+        [
+          "2025-07-15T06:19:33.129Z",
+          "  Request POST https://hub-cloud.browserstack.com/wd/hub/session  ",
+          "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           userName: \u001b[32m&#39;vigneshshrinivas_jQAMtw&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;QDz3zNXgxdpAFoKAFnHX&#39;\u001b[39m,\n           os: \u001b[32m&#39;Windows&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;10&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;Nightwatch-BrowserStack-Build&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;Nightwatch Test&#39;\u001b[39m,\n           testObservability: \u001b[33mtrue\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;swgedizai6hlm1xawtrtjgo8h5jnw6a7ygvht5za&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         browserVersion: \u001b[32m&#39;latest&#39;\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+        ],
+        [
+          "2025-07-15T06:19:34.307Z",
+          "  Response 200 POST https://hub-cloud.browserstack.com/wd/hub/session (1177ms)",
+          "{\n     value: {\n       error: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m,\n       message: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m\n     },\n     sessionId: \u001b[32m&#39;&#39;\u001b[39m,\n     status: \u001b[33m13\u001b[39m\n  }"
+        ]
+      ]
+    },
+    "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5": {
+      "testCaseStartedId": "7329bfda-6d4c-42cb-b70f-56cd5e80a7c5",
+      "timestamp": {
+        "seconds": 1752560375,
+        "nanos": 271000000
+      },
+      "willBeRetried": false,
+      "httpOutput": [
+        [
+          "2025-07-15T06:19:34.336Z",
+          "  Request POST https://hub-cloud.browserstack.com/wd/hub/session  ",
+          "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           userName: \u001b[32m&#39;vigneshshrinivas_jQAMtw&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;QDz3zNXgxdpAFoKAFnHX&#39;\u001b[39m,\n           os: \u001b[32m&#39;Windows&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;10&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;Nightwatch-BrowserStack-Build&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;Nightwatch Test&#39;\u001b[39m,\n           testObservability: \u001b[33mtrue\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;swgedizai6hlm1xawtrtjgo8h5jnw6a7ygvht5za&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         browserVersion: \u001b[32m&#39;latest&#39;\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+        ],
+        [
+          "2025-07-15T06:19:35.267Z",
+          "  Response 200 POST https://hub-cloud.browserstack.com/wd/hub/session (931ms)",
+          "{\n     value: {\n       error: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m,\n       message: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m\n     },\n     sessionId: \u001b[32m&#39;&#39;\u001b[39m,\n     status: \u001b[33m13\u001b[39m\n  }"
+        ]
+      ]
+    },
+    "2b6a4a27-94d0-4b19-83a8-0c0727111c52": {
+      "testCaseStartedId": "2b6a4a27-94d0-4b19-83a8-0c0727111c52",
+      "timestamp": {
+        "seconds": 1752560376,
+        "nanos": 309000000
+      },
+      "willBeRetried": false,
+      "httpOutput": [
+        [
+          "2025-07-15T06:19:35.292Z",
+          "  Request POST https://hub-cloud.browserstack.com/wd/hub/session  ",
+          "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           userName: \u001b[32m&#39;vigneshshrinivas_jQAMtw&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;QDz3zNXgxdpAFoKAFnHX&#39;\u001b[39m,\n           os: \u001b[32m&#39;Windows&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;10&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;Nightwatch-BrowserStack-Build&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;Nightwatch Test&#39;\u001b[39m,\n           testObservability: \u001b[33mtrue\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;swgedizai6hlm1xawtrtjgo8h5jnw6a7ygvht5za&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         browserVersion: \u001b[32m&#39;latest&#39;\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+        ],
+        [
+          "2025-07-15T06:19:36.306Z",
+          "  Response 200 POST https://hub-cloud.browserstack.com/wd/hub/session (1014ms)",
+          "{\n     value: {\n       error: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m,\n       message: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m\n     },\n     sessionId: \u001b[32m&#39;&#39;\u001b[39m,\n     status: \u001b[33m13\u001b[39m\n  }"
+        ]
+      ]
+    }
+  },
+  "testRunFinished": {
+    "testRunStartedId": "d4a7b041-e0ff-4b36-b061-28a1fe4b6739",
+    "timestamp": {
+      "seconds": 1752560376,
+      "nanos": 310000000
+    },
+    "success": false,
+    "httpOutput": [
+      [
+        "2025-07-15T06:19:33.129Z",
+        "  Request POST https://hub-cloud.browserstack.com/wd/hub/session  ",
+        "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           userName: \u001b[32m&#39;vigneshshrinivas_jQAMtw&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;QDz3zNXgxdpAFoKAFnHX&#39;\u001b[39m,\n           os: \u001b[32m&#39;Windows&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;10&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;Nightwatch-BrowserStack-Build&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;Nightwatch Test&#39;\u001b[39m,\n           testObservability: \u001b[33mtrue\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;swgedizai6hlm1xawtrtjgo8h5jnw6a7ygvht5za&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         browserVersion: \u001b[32m&#39;latest&#39;\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+      ],
+      [
+        "2025-07-15T06:19:34.307Z",
+        "  Response 200 POST https://hub-cloud.browserstack.com/wd/hub/session (1177ms)",
+        "{\n     value: {\n       error: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m,\n       message: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m\n     },\n     sessionId: \u001b[32m&#39;&#39;\u001b[39m,\n     status: \u001b[33m13\u001b[39m\n  }"
+      ],
+      [
+        "2025-07-15T06:19:34.336Z",
+        "  Request POST https://hub-cloud.browserstack.com/wd/hub/session  ",
+        "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           userName: \u001b[32m&#39;vigneshshrinivas_jQAMtw&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;QDz3zNXgxdpAFoKAFnHX&#39;\u001b[39m,\n           os: \u001b[32m&#39;Windows&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;10&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;Nightwatch-BrowserStack-Build&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;Nightwatch Test&#39;\u001b[39m,\n           testObservability: \u001b[33mtrue\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;swgedizai6hlm1xawtrtjgo8h5jnw6a7ygvht5za&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         browserVersion: \u001b[32m&#39;latest&#39;\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+      ],
+      [
+        "2025-07-15T06:19:35.267Z",
+        "  Response 200 POST https://hub-cloud.browserstack.com/wd/hub/session (931ms)",
+        "{\n     value: {\n       error: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m,\n       message: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m\n     },\n     sessionId: \u001b[32m&#39;&#39;\u001b[39m,\n     status: \u001b[33m13\u001b[39m\n  }"
+      ],
+      [
+        "2025-07-15T06:19:35.292Z",
+        "  Request POST https://hub-cloud.browserstack.com/wd/hub/session  ",
+        "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           userName: \u001b[32m&#39;vigneshshrinivas_jQAMtw&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;QDz3zNXgxdpAFoKAFnHX&#39;\u001b[39m,\n           os: \u001b[32m&#39;Windows&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;10&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;Nightwatch-BrowserStack-Build&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;Nightwatch Test&#39;\u001b[39m,\n           testObservability: \u001b[33mtrue\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;swgedizai6hlm1xawtrtjgo8h5jnw6a7ygvht5za&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         browserVersion: \u001b[32m&#39;latest&#39;\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+      ],
+      [
+        "2025-07-15T06:19:36.306Z",
+        "  Response 200 POST https://hub-cloud.browserstack.com/wd/hub/session (1014ms)",
+        "{\n     value: {\n       error: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m,\n       message: \u001b[32m`The property &#39;#/alwaysMatch/bstack:options&#39; contains additional properties [&quot;testObservability&quot;] outside of the schema when none are allowed in the payload.`\u001b[39m\n     },\n     sessionId: \u001b[32m&#39;&#39;\u001b[39m,\n     status: \u001b[33m13\u001b[39m\n  }"
+      ]
+    ]
+  }
+}
